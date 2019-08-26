@@ -1,0 +1,139 @@
+top - 16:12:14 up 3 days,  4:39,  0 users,  load average: 1.21, 1.17, 1.44
+Tasks:  62 total,   1 running,  61 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.3 us,  0.5 sy,  0.0 ni, 96.6 id,  0.0 wa,  0.0 hi,  1.1 si,  1.5 st
+KiB Mem : 11149488 total,  6430480 free,  1414848 used,  3304160 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  9139956 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+ 1113 richard+  20   0   44776   3520   3036 R   5.9  0.0   0:00.06 top
+    1 root      20   0  247612  40680   5500 S   0.0  0.4  22:08.05 systemd
+   40 message+  20   0   45400   4156   3412 S   0.0  0.0   1:47.91 dbus-daemon
+   41 rtkit     21   1  185752   3116   2812 S   0.0  0.0   0:33.47 rtkit-daemon
+   42 avahi     20   0   47140   3520   3116 S   0.0  0.0   0:00.52 avahi-daemon
+   45 root      20   0  422084   8640   7476 S   0.0  0.1   0:00.24 ModemManager
+   46 root      20   0  144352  12996   8312 S   0.0  0.1   0:03.37 snapd
+   88 avahi     20   0   47016    352      0 S   0.0  0.0   0:00.00 avahi-daemon
+  113 root      20   0  307348  10124   7736 S   0.0  0.1   0:01.33 polkitd
+  133 root      20   0   20480   3008   1960 S   0.0  0.0   0:01.19 dhclient
+  203 root      20   0  664260  41148  25616 S   0.0  0.4   4:33.94 containerd
+  204 richard+  20   0   65112   6848   5720 S   0.0  0.1   0:00.57 systemd
+  205 root      20   0   14304   2072   1944 S   0.0  0.0   0:00.00 agetty
+  206 root      20   0 1148400  77948  40484 S   0.0  0.7  20:06.60 dockerd
+  207 root      20   0   69956   5488   4736 S   0.0  0.0   0:00.04 sshd
+  209 richard+  20   0   84616   1612     16 S   0.0  0.0   0:00.00 (sd-pam)
+  224 richard+  20   0  371664   9208   7792 S   0.0  0.1   0:01.23 pulseaudio
+  240 richard+  20   0   15968   2776   2460 S   0.0  0.0   0:00.15 ld-linux-x86-64
+  241 richard+  20   0   16636   4228   3188 S   0.0  0.0   0:01.61 ld-linux-x86-64
+  242 richard+  20   0   16644   4364   3312 S   0.0  0.0   0:01.50 ld-linux-x86-64
+  243 richard+  20   0   15968   2888   2568 S   0.0  0.0   0:00.19 ld-linux-x86-64
+  261 richard+  20   0  358820  19068  13148 S   0.0  0.2   0:02.08 ld-linux-x86-64
+  262 richard+  20   0  358460  18964  13040 S   0.0  0.2   0:01.86 ld-linux-x86-64
+  395 richard+  20   0  695084  11360  10036 S   0.0  0.1  55:43.29 ld-linux-x86-64
+  459 root      20   0   99312   6612   5624 S   0.0  0.1   0:00.10 sshd
+  466 richard+  20   0   99312   3064   2076 S   0.0  0.0   0:00.00 sshd
+  471 root      20   0  476880  28616  11796 S   0.0  0.3   1:06.08 packagekitd
+  479 root      20   0   99312   6504   5520 S   0.0  0.1   0:00.09 sshd
+  485 richard+  20   0   99456   3588   2560 S   0.0  0.0   0:00.97 sshd
+  486 richard+  20   0   99476   3200   2064 S   0.0  0.0   0:00.72 sshd
+  488 richard+  20   0   30008   8024   7568 S   0.0  0.1   0:37.16 ld-linux-x86-64
+  490 richard+  20   0   58428   8820   4060 S   0.0  0.1   0:07.31 zsh
+  557 richard+  20   0   24612   3220   2948 S   0.0  0.0   0:00.01 zsh
+  559 richard+  20   0 1459420  35352  29248 S   0.0  0.3   0:46.27 gitstatusd-linu
+ 1111 richard+  20   0   11188   2952   2728 S   0.0  0.0   0:00.00 bash
+ 2031 richard+  20   0   30008   7788   7336 S   0.0  0.1   0:19.71 ld-linux-x86-64
+ 2033 richard+  20   0   57400   7848   4056 S   0.0  0.1   0:01.37 zsh
+ 2090 richard+  20   0   24612   3384   3116 S   0.0  0.0   0:00.00 zsh
+ 2092 richard+  20   0 1458084  31924  27176 S   0.0  0.3   0:39.95 gitstatusd-linu
+10822 root      20   0   46424   4780   4264 S   0.0  0.0   0:35.48 systemd-logind
+16713 systemd+  20   0   49624   4260   3796 S   0.0  0.0   0:00.54 systemd-resolve
+29270 richard+  20   0   21684   3288   2948 S   0.0  0.0   0:00.04 tmux: client
+29272 richard+  20   0   30432   3684   2936 S   0.0  0.0   0:27.93 tmux: server
+29512 richard+  20   0   54960   7564   4144 S   0.0  0.1   0:01.23 zsh
+29580 richard+  20   0   24612   3208   2940 S   0.0  0.0   0:00.00 zsh
+29582 richard+  20   0   74116   3340   3108 S   0.0  0.0   0:01.14 gitstatusd-linu
+30046 richard+  20   0   54976   7376   3940 S   0.0  0.1   0:00.81 zsh
+30108 richard+  20   0   24612   3372   3104 S   0.0  0.0   0:00.01 zsh
+30110 richard+  20   0   74116   3368   3136 S   0.0  0.0   0:01.19 gitstatusd-linu
+30254 richard+  20   0   54976   7340   3924 S   0.0  0.1   0:00.98 zsh
+30326 richard+  20   0   24612   3136   2868 S   0.0  0.0   0:00.01 zsh
+30328 richard+  20   0   74116   3360   3132 S   0.0  0.0   0:00.87 gitstatusd-linu
+30588 richard+  20   0   57396   7796   4072 S   0.0  0.1   0:00.99 zsh
+30644 richard+  20   0   24612   3320   3048 S   0.0  0.0   0:00.01 zsh
+30646 richard+  20   0   74116   3296   3060 S   0.0  0.0   0:01.05 gitstatusd-linu
+31179 richard+  20   0   40876   8972   4856 S   0.0  0.1   0:04.94 vi
+31372 richard+  20   0   57604   8248   4264 S   0.0  0.1   0:04.50 zsh
+31445 richard+  20   0   24612   3324   3052 S   0.0  0.0   0:00.01 zsh
+31447 richard+  20   0   74116   1076    960 S   0.0  0.0   0:00.80 gitstatusd-linu
+32240 root      20   0  308656 203156 202616 S   0.0  1.8   5:42.41 systemd-journal
+32253 root      20   0   43708   3568   2812 S   0.0  0.0   0:02.31 systemd-udevd
+32258 systemd+  20   0   48708   4036   3560 S   0.0  0.0   0:02.46 systemd-network
+
+top - 16:12:17 up 3 days,  4:39,  0 users,  load average: 1.21, 1.17, 1.44
+Tasks:  62 total,   1 running,  61 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  0.2 us,  0.7 sy,  0.0 ni, 94.3 id,  0.0 wa,  0.0 hi,  3.0 si,  1.8 st
+KiB Mem : 11149488 total,  6429716 free,  1415588 used,  3304184 buff/cache
+KiB Swap:        0 total,        0 free,        0 used.  9139264 avail Mem 
+
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+  206 root      20   0 1148400  77948  40484 S   2.6  0.7  20:06.68 dockerd
+29272 richard+  20   0   30432   3684   2936 S   1.0  0.0   0:27.96 tmux: server
+ 1113 richard+  20   0   44776   3520   3036 R   0.7  0.0   0:00.08 top
+  203 root      20   0  664260  41148  25616 S   0.3  0.4   4:33.95 containerd
+ 2092 richard+  20   0 1458084  31924  27176 S   0.3  0.3   0:39.96 gitstatusd-linu
+32240 root      20   0  308656 203156 202616 S   0.3  1.8   5:42.42 systemd-journal
+    1 root      20   0  247612  40680   5500 S   0.0  0.4  22:08.05 systemd
+   40 message+  20   0   45400   4156   3412 S   0.0  0.0   1:47.91 dbus-daemon
+   41 rtkit     21   1  185752   3116   2812 S   0.0  0.0   0:33.47 rtkit-daemon
+   42 avahi     20   0   47140   3520   3116 S   0.0  0.0   0:00.52 avahi-daemon
+   45 root      20   0  422084   8640   7476 S   0.0  0.1   0:00.24 ModemManager
+   46 root      20   0  144352  12996   8312 S   0.0  0.1   0:03.37 snapd
+   88 avahi     20   0   47016    352      0 S   0.0  0.0   0:00.00 avahi-daemon
+  113 root      20   0  307348  10124   7736 S   0.0  0.1   0:01.33 polkitd
+  133 root      20   0   20480   3008   1960 S   0.0  0.0   0:01.19 dhclient
+  204 richard+  20   0   65112   6848   5720 S   0.0  0.1   0:00.57 systemd
+  205 root      20   0   14304   2072   1944 S   0.0  0.0   0:00.00 agetty
+  207 root      20   0   69956   5488   4736 S   0.0  0.0   0:00.04 sshd
+  209 richard+  20   0   84616   1612     16 S   0.0  0.0   0:00.00 (sd-pam)
+  224 richard+  20   0  371664   9208   7792 S   0.0  0.1   0:01.23 pulseaudio
+  240 richard+  20   0   15968   2776   2460 S   0.0  0.0   0:00.15 ld-linux-x86-64
+  241 richard+  20   0   16636   4228   3188 S   0.0  0.0   0:01.61 ld-linux-x86-64
+  242 richard+  20   0   16644   4364   3312 S   0.0  0.0   0:01.50 ld-linux-x86-64
+  243 richard+  20   0   15968   2888   2568 S   0.0  0.0   0:00.19 ld-linux-x86-64
+  261 richard+  20   0  358820  19068  13148 S   0.0  0.2   0:02.08 ld-linux-x86-64
+  262 richard+  20   0  358460  18964  13040 S   0.0  0.2   0:01.86 ld-linux-x86-64
+  395 richard+  20   0  695084  11360  10036 S   0.0  0.1  55:43.29 ld-linux-x86-64
+  459 root      20   0   99312   6612   5624 S   0.0  0.1   0:00.10 sshd
+  466 richard+  20   0   99312   3064   2076 S   0.0  0.0   0:00.00 sshd
+  471 root      20   0  476880  28616  11796 S   0.0  0.3   1:06.08 packagekitd
+  479 root      20   0   99312   6504   5520 S   0.0  0.1   0:00.09 sshd
+  485 richard+  20   0   99456   3588   2560 S   0.0  0.0   0:00.97 sshd
+  486 richard+  20   0   99476   3200   2064 S   0.0  0.0   0:00.72 sshd
+  488 richard+  20   0   30008   8024   7568 S   0.0  0.1   0:37.16 ld-linux-x86-64
+  490 richard+  20   0   58428   8820   4060 S   0.0  0.1   0:07.31 zsh
+  557 richard+  20   0   24612   3220   2948 S   0.0  0.0   0:00.01 zsh
+  559 richard+  20   0 1459420  35352  29248 S   0.0  0.3   0:46.27 gitstatusd-linu
+ 1111 richard+  20   0   11188   2952   2728 S   0.0  0.0   0:00.00 bash
+ 2031 richard+  20   0   30008   7788   7336 S   0.0  0.1   0:19.71 ld-linux-x86-64
+ 2033 richard+  20   0   57400   7848   4056 S   0.0  0.1   0:01.37 zsh
+ 2090 richard+  20   0   24612   3384   3116 S   0.0  0.0   0:00.00 zsh
+10822 root      20   0   46424   4780   4264 S   0.0  0.0   0:35.48 systemd-logind
+16713 systemd+  20   0   49624   4260   3796 S   0.0  0.0   0:00.54 systemd-resolve
+29270 richard+  20   0   21684   3288   2948 S   0.0  0.0   0:00.04 tmux: client
+29512 richard+  20   0   54960   7564   4144 S   0.0  0.1   0:01.23 zsh
+29580 richard+  20   0   24612   3208   2940 S   0.0  0.0   0:00.00 zsh
+29582 richard+  20   0   74116   3340   3108 S   0.0  0.0   0:01.14 gitstatusd-linu
+30046 richard+  20   0   54976   7376   3940 S   0.0  0.1   0:00.81 zsh
+30108 richard+  20   0   24612   3372   3104 S   0.0  0.0   0:00.01 zsh
+30110 richard+  20   0   74116   3368   3136 S   0.0  0.0   0:01.19 gitstatusd-linu
+30254 richard+  20   0   54976   7340   3924 S   0.0  0.1   0:00.98 zsh
+30326 richard+  20   0   24612   3136   2868 S   0.0  0.0   0:00.01 zsh
+30328 richard+  20   0   74116   3360   3132 S   0.0  0.0   0:00.87 gitstatusd-linu
+30588 richard+  20   0   57396   7796   4072 S   0.0  0.1   0:00.99 zsh
+30644 richard+  20   0   24612   3320   3048 S   0.0  0.0   0:00.01 zsh
+30646 richard+  20   0   74116   3296   3060 S   0.0  0.0   0:01.05 gitstatusd-linu
+31179 richard+  20   0   40876   8972   4856 S   0.0  0.1   0:04.94 vi
+31372 richard+  20   0   57604   8248   4264 S   0.0  0.1   0:04.50 zsh
+31445 richard+  20   0   24612   3324   3052 S   0.0  0.0   0:00.01 zsh
+31447 richard+  20   0   74116   1076    960 S   0.0  0.0   0:00.80 gitstatusd-linu
+32253 root      20   0   43708   3568   2812 S   0.0  0.0   0:02.31 systemd-udevd
+32258 systemd+  20   0   48708   4036   3560 S   0.0  0.0   0:02.46 systemd-network
