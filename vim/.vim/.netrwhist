@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/richardrose/.vim'
+let g:netrw_dirhist_2='/home/richardrose/tmux'
+let g:netrw_dirhist_3='/home/richardrose/development/go/minikube_test/test.go'
+let g:netrw_dirhist_4='/home/richardrose/.oh-my-zsh'
+let g:netrw_dirhist_5='/home/richardrose/repos/qwiklabs/gcp-spl-content/game_templates/gdc-adoption-strategies'
+let g:netrw_dirhist_6='/home/richardrose/dotfiles/tmux_scripts'

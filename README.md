@@ -4,7 +4,7 @@ Config files for Linux environment
 
 ## TMUX
 
-![](tmux-statusbar.png)
+![tmux statusline](images/tmux-statusbar.png)
 
 Basic TMUX configuration
 
