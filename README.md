@@ -39,7 +39,7 @@ File uses the following plugins:
 * Plugin 'godlygeek/tabular'
 * Plugin 'plasticboy/vim-markdown'
 
-Note: To use vim-go, Vim 8.0 or Neovim 0.3.2 or greate are required.
+Note: To use vim-go, Vim 8.0 or Neovim 0.3.2 or greater are required.
 
 ### To Install
 
