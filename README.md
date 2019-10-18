@@ -7,9 +7,13 @@ Config files for Linux environment
 The status line will look like the image below:
 ![tmux statusline](images/tmux-statusbar.png)
 
-### Basic TMUX configuration
 
-Use the .tmux.conf + tmux-scripts folder
+### To Install
+
+Basic TMUX configuration, copy the following files to ~
+
+* .tmux-conf
+* tmux-scripts/
 
 ### Key Remapping
 TBC
@@ -34,6 +38,8 @@ File uses the following plugins:
 * Plugin 'pangloss/vim-javascript'
 * Plugin 'godlygeek/tabular'
 * Plugin 'plasticboy/vim-markdown'
+
+Note: To use vim-go, Vim 8.0 or Neovim 0.3.2 or greate are required.
 
 ### To Install
 
