@@ -17,12 +17,9 @@ TBC
 
 ## VIM
 
-Basic VIM configuration
+### Plugin
 
-.vim/
-.vimrc
-
-Plugin
+File uses the following plugins:
 
 * Plugin 'VundleVim/Vundle.vim'
 * Plugin 'prognostic/plasticine'
@@ -37,6 +34,17 @@ Plugin
 * Plugin 'pangloss/vim-javascript'
 * Plugin 'godlygeek/tabular'
 * Plugin 'plasticboy/vim-markdown'
+
+### To Install
+
+Basic VIM configuration, copy the following files to ~
+
+* .vim/
+* .vimrc
+
+1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+2. Open Vim
+3. Install the plugins i.e. :PluginInstall
 
 
 ## Docker
