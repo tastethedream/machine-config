@@ -69,6 +69,10 @@ aliases=(
 plugins=(
   git
   bashmarks
+  go
+  python
+  node
+  kubectl
 )
 
 source $OSH/oh-my-bash.sh
