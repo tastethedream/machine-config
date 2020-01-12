@@ -2,11 +2,16 @@
 Config files for Linux environment
 
 
+## OH MY BASH
+
+Install the software [ohmybash](https://github.com/ohmybash)
+
+Set the theme to agnoster
+
 ## TMUX
 
 The status line will look like the image below:
 ![tmux statusline](images/tmux-statusbar.png)
-
 
 ### To Install
 
@@ -20,6 +25,12 @@ TBC
 
 
 ## VIM
+
+Install Neovim - sudo apt-get install neovim
+
+Add alias to replace vim
+
+
 
 ### Plugin
 
