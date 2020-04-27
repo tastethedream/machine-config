@@ -1,6 +1,21 @@
 # machine-config
 Config files for Linux environment
 
+ChromeOS
+* Keep
+* Mado
+* Connection Forwarder
+* Polarr Photo Editor
+
+Linux Apps
+* Docker
+* Inkscape
+* Tmux
+* Vim
+* Node
+* pass
+* gpg
+
 
 ## OH MY BASH
 
