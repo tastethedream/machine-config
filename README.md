@@ -15,6 +15,8 @@ Linux Apps
 * Node
 * pass
 * gpg
+* ytdl
+* jq
 
 
 ## OH MY BASH
