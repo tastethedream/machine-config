@@ -1,88 +1,54 @@
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-" call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" The following are examples of different formats supported.
-" Keep Plugin commands between vundle#begin/end.
-" plugin on GitHub repo
-" Plugin 'tpope/vim-fugitive'
-" plugin from http://vim-scripts.org/vim/scripts.html
-" Plugin 'L9'
-" Git plugin not hosted on GitHub
-" Plugin 'git://git.wincent.com/command-t.git'
-" git repos on your local machine (i.e. when working on your own plugin)
-" Plugin 'file:///home/gmarik/path/to/plugin'
-" The sparkup vim script is in a subdirectory of this repo called vim.
-" Pass the path to set the runtimepath properly.
-" Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
-" Install L9 and avoid a Naming conflict if you've already installed a
-" different version somewhere else.
-" Plugin 'ascenator/L9', {'name': 'newL9'}
-
-" RR: Add color scheme
-Plugin 'prognostic/plasticine'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'lmintmate/blue-mood-vim'
-Plugin 'KKPMW/sacredforest-vim'
-
-
-" Add lightweight status line
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-
-" Languages
-" Ruby Specific plugins
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-rails'
-Plugin 'fatih/vim-go'
-Plugin 'pangloss/vim-javascript'
-" Plugin 'klen/python-mode'
-
-" Add https://github.com/gabrielelana/vim-markdown
-" Bundle 'gabrielelana/vim-markdown'
-
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-" filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-" :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to
-" auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 " RR: User settings
-" set number
-set relativenumber
-syntax on
-" set termguicolors
-" colorscheme blue-mood 
-" colorscheme plasticine 
-" colorscheme sacredforest
-colorscheme blackdust_modified
-" colorscheme nord
-" colorscheme oceandeep
-filetype plugin indent on
-filetype on
+syntax on                                          " Syntax highlight
+set noerrorbells                                   " No bells
+set tabstop=2 softtabstop=2                        " Default tab use space
+set shiftwidth=2                                   " Default shift
+set expandtab                                      " Default tab expansion
+set smartindent
+" set number relativenumber                                             
+set nu rnu
+set nowrap                                         " Dont wrap lines
+set smartcase                                      " Case insensitive
+set noswapfile
+set nobackup
+set undodir=~/.vim/undodir                         " Create this !!!
+set undofile
+set incsearch                                      " Incremental search
+set encoding=utf-8
+set spelllang=en_gb
+set spell
 
-filetype indent on
+set colorcolumn=80                                 " Add a column bar
+highlight ColorColumn ctermbg=0 guibg=lightgrey
 
+" Plugins
+" Ref: https://github.com/junegunn/vim-plug
+call plug#begin('~/.vim/plugged')
+
+Plug 'vim-airline/vim-airline'                      " status bar
+Plug 'vim-airline/vim-airline-themes'
+Plug 'airblade/vim-gitgutter'                      " git changes
+Plug 'ap/vim-css-color'
+Plug 'morhetz/gruvbox'                             " color scheme
+Plug 'jremmen/vim-ripgrep'    
+Plug 'tpope/vim-fugitive'                          " git
+Plug 'tpope/vim-markdown'                          " markdown
+Plug 'junegunn/goyo.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'vim-utils/vim-man'
+Plug 'preservim/nerdtree'
+Plug 'Valloric/YouCompleteMe'
+Plug 'mbbill/undotree'
+
+call plug#end()
+
+colorscheme gruvbox
+set background=dark
+
+let g:netrw_browse_split=2
+let g:netrw_banner=0
+let g:netrw_winsize=20
+let g:ctrlp_use_caching=0
+
+" Run Nerdtree on start
+autocmd vimenter * NERDTree
