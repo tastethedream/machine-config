@@ -28,7 +28,7 @@ Set the theme to agnoster
 ## TMUX
 
 The status line will look like the image below:
-![tmux statusline](images/tmux-statusbar.png)
+![tmux statusline](https://github.com/rosera/machine-config/blob/master/images/tmux-statusbar.png "Tmux statusbar")
 
 ### To Install
 
@@ -43,42 +43,15 @@ TBC
 
 ## VIM
 
-Install Neovim - sudo apt-get install neovim
+The configuration will be similar to below:
+![vim interface](https://github.com/rosera/machine-config/blob/master/images/vim-interface.png "Vim config")
 
-Add alias to replace vim
+### Vim or Neovim
 
+* Build Vim with support for Python3
+* Install Neovim - sudo apt-get install neovim
 
-
-### Plugin
-
-File uses the following plugins:
-
-* Plugin 'VundleVim/Vundle.vim'
-* Plugin 'prognostic/plasticine'
-* Plugin 'arcticicestudio/nord-vim'
-* Plugin 'lmintmate/blue-mood-vim'
-* Plugin 'KKPMW/sacredforest-vim'
-* Plugin 'vim-airline/vim-airline'
-* Plugin 'vim-airline/vim-airline-themes'
-* Plugin 'vim-ruby/vim-ruby'
-* Plugin 'tpope/vim-rails'
-* Plugin 'fatih/vim-go'
-* Plugin 'pangloss/vim-javascript'
-* Plugin 'godlygeek/tabular'
-* Plugin 'plasticboy/vim-markdown'
-
-Note: To use vim-go, Vim 8.0 or Neovim 0.3.2 or greater are required.
-
-### To Install
-
-Basic VIM configuration, copy the following files to ~
-
-* .vim/
-* .vimrc
-
-1. git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-2. Open Vim
-3. Install the plugins i.e. :PluginInstall
+Add an alias to replace vim
 
 
 ## Docker
