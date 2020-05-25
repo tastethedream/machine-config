@@ -39,7 +39,7 @@ File uses the following plugins:
 
 ## Vim
 
-* Need Vim with Python3 support 3.6+ (Required You Complete Me Plugin)
+* YouCompleteMe needs Vim with Python3 support 3.5.1+
 * Install plugin `:PlugInstall`
 * YouCompleteMe - also need to run the `install.py`
 
