@@ -6,6 +6,7 @@ ChromeOS
 * Mado
 * Connection Forwarder
 * Polarr Photo Editor
+* Pixlr Photo Editor
 
 Linux Apps
 * Docker
