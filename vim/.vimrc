@@ -5,7 +5,6 @@ set tabstop=2 softtabstop=2                        " Default tab use space
 set shiftwidth=2                                   " Default shift
 set expandtab                                      " Default tab expansion
 set smartindent
-" set number relativenumber                                             
 set nu rnu
 set nowrap                                         " Dont wrap lines
 set smartcase                                      " Case insensitive
@@ -50,5 +49,9 @@ let g:netrw_banner=0
 let g:netrw_winsize=20
 let g:ctrlp_use_caching=0
 
+" Open Nerdtree on the RIGHT
+let g:NERDTreeWinPos="right"
 " Run Nerdtree on start
 autocmd vimenter * NERDTree
+" Move focus back to editor
+autocmd vimenter * wincmd p
