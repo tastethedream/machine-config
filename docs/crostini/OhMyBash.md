@@ -124,8 +124,9 @@ Open a terminal window. In the terminal window, press CTRL-SHIFT-P to enter the 
 
 Find the appearance settings, then go to the font-family and enter your new font option (list of fonts is available here) e.g.
 
-* "Liberation Mono", monospace
-
+```
+  "Source Code Pro", "NovaMono", monospace,"Liberation Mono", "RobotoMono"
+```
 
 Now select the user-css entry and change the default “https://example.com/some/file” contents to the following:
 ```
