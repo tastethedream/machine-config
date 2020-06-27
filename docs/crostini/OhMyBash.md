@@ -20,14 +20,8 @@ Configuration
 
 Update your machine
 ```
-apt -y update && apt -y upgrade
+sudo apt -y update && apt -y upgrade
 ```
-
-Install the powerline fonts
-```
-sudo apt-get install fonts-powerline
-```
-
 
 Install the powerline fonts
 ```
@@ -115,29 +109,67 @@ Install oh-my-bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
 ```
 
+Add agnoster theme
+```
+git clone https://github.com/agnoster/agnoster-zsh-theme.git ~/.oh-my-bash/custom/themes/agnoster
+```
 
 
+Make the following amendments in your configuration file - Amend the theme
 
+
+Set name of the theme to load --- if set to "random", it will load a random theme each time oh-my-zsh is loaded, in which case, to know which specific one was loaded, run: 
+
+```
+#echo $RANDOM_THEME
+#OSH_THEME="font"
+OSH_THEME="agnoster"
+Add any plugins that would be useful, for example
+
+
+# Which plugins would you like to load?
+# Standard plugins can be found in ~/.oh-my-zsh/plugins/*
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  debian
+  docker
+  git
+  go
+  ruby
+  tmux
+)
+```
+
+
+## Oh My Bash
+
+Install oh-my-bash
+```
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmybash/oh-my-bash/master/tools/install.sh)"
+```
+
+Add agnoster theme
 ## Fonts
 
 Open a terminal window. In the terminal window, press CTRL-SHIFT-P to enter the terminal profile settings
 
 Find the appearance settings, then go to the font-family and enter your new font option (list of fonts is available here) e.g.
 
-```
-  "Source Code Pro", "NovaMono", monospace,"Liberation Mono", "RobotoMono"
-```
+* "Liberation Mono", monospace
 
-Now select the user-css entry and change the default “https://example.com/some/file” contents to the following:
+
+Now select the custom-css (URI) entry and change the default “https://example.com/some/file” contents to the following:
 ```
 https://cdn.jsdelivr.net/gh/wernight/powerline-web-fonts@ba4426cb0c0b05eb6cb342c7719776a41e1f2114/PowerlineFonts.css
 ```
 
 Finally …
 
-Open the a terminal window and press CTRL-SHIFT and J (to open a JavaScript window)  
+Open the a terminal window and press `CTRL-SHIFT and J` (to open a JavaScript window)  
 
-__Note:__ this actually updates the fields available in the profile window - CTRL-SHIFT-P).
+__Note:__ this actually updates the fields available in the profile window - `CTRL-SHIFT-P`).
 
 Paste the following JavaScript code in to amend the colours used at the command line to something less garish.
 
