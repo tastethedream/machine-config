@@ -61,6 +61,11 @@ sudo apt update && sudo apt dist-upgrade
 ## Download Unifi Controller
 
 
+SSH to the RPi
+```
+ssh pi@[ip_address]
+```
+
 Go to [Unifi Website](https://www.ui.com/download/unifi/)
 
 Access the Unifi Network Controller - Debian/Ubuntu and Unifi Cloud Key
@@ -68,27 +73,21 @@ Access the Unifi Network Controller - Debian/Ubuntu and Unifi Cloud Key
 Copy the download URL
 
 
-SSH to the RPi
-```
-ssh pi@[ip_address]
-```
-
-
 Download the software
 ```
-curl [unifi-software-url] -o /tmp
+sudo curl [unifi-software-url] -o /tmp
 ```
 
 Install the software packages
 ```
-sudo apt get mongodb-server mongodb-10gen mongodb-org-server openjdk-8-jre-headless openjdk-8-jdk
+sudo apt get mongodb-server openjdk-8-jre-headless openjdk-8-jdk jsvc libcommons-daemon-java
 ```
 
 
 Install the unfi software
 
 ```
-dpkg -i [software]
+sudo      dpk  g -i [path/software]
 ```
 
 Confirm the status of the unifi service (i.e. Active)
