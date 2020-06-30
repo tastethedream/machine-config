@@ -1,6 +1,6 @@
 # Unifi Controller
 
-* Format memory card - debian
+* Format memory card - debian - use raspbian with desktop (you need gui to login to console)
 
 * Once formatted - remount the memory card
 
