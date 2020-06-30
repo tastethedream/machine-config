@@ -45,8 +45,9 @@ Change the host - 127.0.0.1 value to match what was put in the hostname file
 ## Connecting to RPi
 
 * Connect to the RPI over the network
+```
 ssh pi@[ip address]
-
+```
 
 Username: pi
 Password: raspberry
@@ -57,13 +58,51 @@ Update the RPi
 sudo apt update && sudo apt dist-upgrade
 ```
 
+Confirm Desktop setting requires login
+```
+sudo raspi-config
+```
+
+
+# Amend the default user acccount
+
+1. List pi user permissions
+```
+groups pi
+```
+
+2. Create new user with PI permissions
+```
+sudo useradd -m -G adm,dialout,cdrom,sudo,audio,video,plugdev,games,users,input,netdev,spi,i2c,gpio [USERID]
+```
+
+3. Set the new user Password
+```
+sudo passwd [USERID]
+```
+
+4. Reboot the Raspberry pi
+```
+sudo shutdown -r now
+```
+
+5. Login with new user
+```
+ssh [USERID]@[IP Address]
+```
+
+6. Delete the default 'pi' user
+```
+sudo deluser pi
+```
+
 
 ## Download Unifi Controller
 
 
 SSH to the RPi
 ```
-ssh pi@[ip_address]
+ssh [USERID]@[ip_address]
 ```
 
 Go to [Unifi Website](https://www.ui.com/download/unifi/)
@@ -75,23 +114,20 @@ Copy the download URL
 
 Download the software
 ```
-sudo curl [unifi-software-url] -o /tmp
+curl -o [FILENAME] [unifi-software-url] 
 ```
 
 Install the software packages
 ```
-sudo apt get mongodb-server openjdk-8-jre-headless openjdk-8-jdk jsvc libcommons-daemon-java
+sudo apt install -y mongodb-server openjdk-8-jre-headless openjdk-8-jdk jsvc libcommons-daemon-java
 ```
-
 
 Install the unfi software
-
 ```
-sudo      dpk  g -i [path/software]
+sudo dpkg -i [path/software]
 ```
 
 Confirm the status of the unifi service (i.e. Active)
-
 ```
 sudo service unifi status
 ```
