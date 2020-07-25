@@ -20,7 +20,7 @@ Configuration
 
 Update your machine
 ```
-sudo apt -y update && apt -y upgrade
+sudo apt -y update && sudo apt -y upgrade
 ```
 
 Install the powerline fonts
